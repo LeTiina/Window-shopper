@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		B448D6C91FEAF47000F09E06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B448D6C81FEAF47000F09E06 /* AppDelegate.swift */; };
-		B448D6CB1FEAF47000F09E06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B448D6CA1FEAF47000F09E06 /* ViewController.swift */; };
+		B448D6CB1FEAF47000F09E06 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B448D6CA1FEAF47000F09E06 /* MainVC.swift */; };
 		B448D6CE1FEAF47000F09E06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B448D6CC1FEAF47000F09E06 /* Main.storyboard */; };
 		B448D6D01FEAF47000F09E06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B448D6CF1FEAF47000F09E06 /* Assets.xcassets */; };
 		B448D6D31FEAF47000F09E06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B448D6D11FEAF47000F09E06 /* LaunchScreen.storyboard */; };
+		B448D6DD1FEB172500F09E06 /* CurrencyTxtField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B448D6DC1FEB172500F09E06 /* CurrencyTxtField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B448D6C51FEAF47000F09E06 /* window-shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "window-shopper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B448D6C81FEAF47000F09E06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B448D6CA1FEAF47000F09E06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B448D6CA1FEAF47000F09E06 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		B448D6CD1FEAF47000F09E06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B448D6CF1FEAF47000F09E06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B448D6D21FEAF47000F09E06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B448D6D41FEAF47000F09E06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B448D6DC1FEB172500F09E06 /* CurrencyTxtField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTxtField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		B448D6C71FEAF47000F09E06 /* window-shopper */ = {
 			isa = PBXGroup;
 			children = (
+				B448D6DB1FEB16BF00F09E06 /* Views */,
+				B448D6DA1FEAF6B300F09E06 /* Controller */,
 				B448D6C81FEAF47000F09E06 /* AppDelegate.swift */,
-				B448D6CA1FEAF47000F09E06 /* ViewController.swift */,
 				B448D6CC1FEAF47000F09E06 /* Main.storyboard */,
 				B448D6CF1FEAF47000F09E06 /* Assets.xcassets */,
 				B448D6D11FEAF47000F09E06 /* LaunchScreen.storyboard */,
 				B448D6D41FEAF47000F09E06 /* Info.plist */,
 			);
 			path = "window-shopper";
+			sourceTree = "<group>";
+		};
+		B448D6DA1FEAF6B300F09E06 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B448D6CA1FEAF47000F09E06 /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B448D6DB1FEB16BF00F09E06 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B448D6DC1FEB172500F09E06 /* CurrencyTxtField.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +155,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B448D6CB1FEAF47000F09E06 /* ViewController.swift in Sources */,
+				B448D6DD1FEB172500F09E06 /* CurrencyTxtField.swift in Sources */,
+				B448D6CB1FEAF47000F09E06 /* MainVC.swift in Sources */,
 				B448D6C91FEAF47000F09E06 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
