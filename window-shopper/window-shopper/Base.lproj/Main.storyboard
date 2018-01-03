@@ -11,6 +11,7 @@
     </dependencies>
     <customFonts key="customFonts">
         <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
             <string>Avenir-Light</string>
             <string>Avenir-Medium</string>
         </array>
@@ -40,7 +41,7 @@
                                     <constraint firstAttribute="height" constant="40" id="wXn-AN-QRy"/>
                                 </constraints>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Item price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jut-J7-pec" customClass="CurrencyTxtField" customModule="window_shopper" customModuleProvider="target">
@@ -50,7 +51,7 @@
                                     <constraint firstAttribute="height" constant="40" id="tgl-Kk-MbB"/>
                                 </constraints>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPy-zB-936">
@@ -82,6 +83,18 @@
                                     <action selector="clearCalculatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s8q-nR-LWT"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPF-Et-UvS">
+                                <rect key="frame" x="172" y="412" width="30.5" height="74"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="54"/>
+                                <color key="textColor" red="0.93536077259588879" green="0.96275121920081519" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgY-Qk-ph3">
+                                <rect key="frame" x="169.5" y="476" width="36" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.97232410276004955" green="0.96921446711154779" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -92,14 +105,18 @@
                             <constraint firstItem="esL-KT-YWH" firstAttribute="top" secondItem="Jlj-x3-C6j" secondAttribute="bottom" constant="35" id="Dpn-ly-guj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="esL-KT-YWH" secondAttribute="trailing" constant="20" id="ED9-mV-ViV"/>
                             <constraint firstItem="g0k-HM-BEH" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="IV4-6K-SoW"/>
+                            <constraint firstItem="KPF-Et-UvS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JOJ-jv-NQ6"/>
                             <constraint firstItem="g0k-HM-BEH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LEE-cd-OFU"/>
                             <constraint firstItem="g0k-HM-BEH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MJc-G6-7tC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kwW-vY-cSW" secondAttribute="bottom" constant="20" id="S7n-vh-6TC"/>
                             <constraint firstItem="g0k-HM-BEH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="TpC-XS-qg6"/>
+                            <constraint firstItem="zgY-Qk-ph3" firstAttribute="top" secondItem="v7o-dw-oPv" secondAttribute="bottom" constant="87" id="a9n-mh-BKt"/>
                             <constraint firstItem="qPy-zB-936" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aAv-lV-6lt"/>
                             <constraint firstItem="Jut-J7-pec" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ask-SQ-4ty"/>
+                            <constraint firstItem="zgY-Qk-ph3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cMA-l4-6K3"/>
                             <constraint firstItem="v7o-dw-oPv" firstAttribute="top" secondItem="Jut-J7-pec" secondAttribute="bottom" constant="108" id="dsd-77-Ozo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kwW-vY-cSW" secondAttribute="trailing" constant="20" id="i4p-SZ-W7y"/>
+                            <constraint firstItem="KPF-Et-UvS" firstAttribute="top" secondItem="v7o-dw-oPv" secondAttribute="bottom" constant="23" id="jbz-xa-ATQ"/>
                             <constraint firstItem="Jlj-x3-C6j" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="krJ-fe-3Hw"/>
                             <constraint firstItem="kwW-vY-cSW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lIi-9k-Na8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jut-J7-pec" secondAttribute="trailing" constant="20" id="nkm-c6-OfG"/>
@@ -109,6 +126,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="HowManyDaysLbl" destination="KPF-Et-UvS" id="Ao2-P0-JhA"/>
+                        <outlet property="daysLbl" destination="zgY-Qk-ph3" id="248-7Z-TFd"/>
                         <outlet property="hoursLbl" destination="v7o-dw-oPv" id="zlw-Ho-F2h"/>
                         <outlet property="priceTxt" destination="Jut-J7-pec" id="g7s-Ng-TXa"/>
                         <outlet property="resultLbl" destination="qPy-zB-936" id="LLB-2H-8EE"/>

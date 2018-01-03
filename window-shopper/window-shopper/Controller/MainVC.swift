@@ -16,6 +16,8 @@ class MainVC: UIViewController {
     
     @IBOutlet weak var resultLbl: UILabel!
     @IBOutlet weak var hoursLbl: UILabel!
+    @IBOutlet weak var HowManyDaysLbl: UILabel!
+    @IBOutlet weak var daysLbl: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +33,8 @@ class MainVC: UIViewController {
         
         resultLbl.isHidden = true
         hoursLbl.isHidden = true
+        HowManyDaysLbl.isHidden = true
+        daysLbl.isHidden = true
     }
 
     @objc func calculate(){
@@ -39,7 +43,10 @@ class MainVC: UIViewController {
                 view.endEditing(true)
                 resultLbl.isHidden = false
                 hoursLbl.isHidden = false
+                HowManyDaysLbl.isHidden = false
+                daysLbl.isHidden = false
                 resultLbl.text = "\(Wage.getHours(forWage: wage, andPrice: price))"
+                HowManyDaysLbl.text = "\((Wage.getDays(forWage: wage, andPrice: price)))"
             }
         }
     }
@@ -47,6 +54,8 @@ class MainVC: UIViewController {
     @IBAction func clearCalculatorPressed(_ sender: Any) {
         resultLbl.isHidden = true
         hoursLbl.isHidden = true
+        HowManyDaysLbl.isHidden = true
+        daysLbl.isHidden = true
         wageTxt.text = ""
         priceTxt.text = ""
     }
